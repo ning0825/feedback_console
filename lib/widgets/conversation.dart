@@ -6,7 +6,7 @@ import 'package:redux/redux.dart';
 import '../actions.dart';
 import '../model.dart';
 
-class DetailView extends StatelessWidget {
+class ConversationPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return StoreConnector<AppState, _ViewModel>(

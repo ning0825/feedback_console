@@ -54,7 +54,7 @@ class MainApp extends StatelessWidget {
               appBar: AppBar(
                 automaticallyImplyLeading: true,
               ),
-              body: DetailPage(),
+              body: ConversationPage(),
             );
           }
         },
@@ -127,7 +127,7 @@ class _MainPageState extends State<MainPage> {
           ),
         ),
         Expanded(
-          child: DetailPage(),
+          child: ConversationPage(),
         ),
       ],
     );
@@ -143,12 +143,5 @@ class ListPage extends StatelessWidget {
         Expanded(child: FeedbackListView()),
       ],
     );
-  }
-}
-
-class DetailPage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return DetailView();
   }
 }
